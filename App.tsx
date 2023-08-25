@@ -9,7 +9,7 @@ import React, { useEffect } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 // import BasicAnimation from './src/components/basicanimations/basicAnimation';
 import SplashScreen from 'react-native-splash-screen';
-import Login from './src/login';
+import AppNav from './src/navigation/appNav';
 
 function App(): JSX.Element {
   useEffect(() => {
@@ -18,7 +18,7 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Login />
+      <AppNav />
     </SafeAreaView>
   );
 }

@@ -27,24 +27,21 @@ const Login = () => {
         onChangeText={(value) => setPassword(value)}
       />
       <View style={styles.buttonContainer}>
-        <Button
-          labelStyle={styles.loginButton}
-          mode="contained"
-          onPress={() => console.log('Pressed')}>
+        <Button labelStyle={styles.loginButton} mode="contained">
           Login
         </Button>
       </View>
-      <View style={styles.thirdPContainer}>
-        <TouchableOpacity onPress={() => console.log('clicked on fb')}>
+      {/* <View style={styles.thirdPContainer}>
+        <TouchableOpacity>
           <Icon style={styles.icon} name="facebook" color="blue" size={40} />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => console.log('clicked on twitter')}>
+        <TouchableOpacity>
           <Icon style={styles.icon} name="twitter" color="blue" size={40} />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => console.log('clicked on google')}>
+        <TouchableOpacity>
           <Icon style={styles.icon} name="google" color="blue" size={40} />
         </TouchableOpacity>
-      </View>
+      </View> */}
     </View>
   );
 };
